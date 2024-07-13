@@ -1,0 +1,35 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.row{
+    height: 400px;
+    display: flex;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+.row > div{
+    flex: 1;
+}
+
+
+.two-image img{
+    height: calc((100%-2)/2);
+}
+.box-collage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .box-collage{
+        grid-template-columns: 1fr;
+    }
+
+    
+}
